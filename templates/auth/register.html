@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+{% load static %}
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static '/css/auth/style.css' %}" />
+  <title>إنشاء الحساب</title>
+</head>
+
+<body>
+  <div class="containars">
+    <form action="#" class="form">
+      <h1 class="text-center" style="margin-bottom: -20px; margin-top: 0; color: #6e3036;">إنشاء حسابك الأن</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div class="progress-step progress-step-active" data-title="تحقق"></div>
+        <div class="progress-step" data-title="المعلومات"></div>
+      </div>
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="" style="color: black; text-align: right; margin-right: 5px; margin-top: -30px;">نوع
+            الهوية</label>
+          <select class="effect-4 style-list" name="" id="">
+            <option value="">مواطن</option>
+            <option value="">خليجي</option>
+            <option value="">مقيم</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="" style="color: black; text-align: right; margin-right: 5px; margin-top: -10px;">نوع
+            الهوية</label>
+          <select class="effect-4 style-list" name="" id="">
+            <option value="">رقم الهوية</option>
+            <option value="">جواز سفر</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="" style="color: black; text-align: right; margin-right: 5px; margin-top: -10px;">الجنسية</label>
+          <select class="effect-4 style-list" name="" id="">
+            <option value="">السعودية</option>
+            <option value="">البحرين</option>
+            <option value="">الإمارات العربية المتحدة</option>
+            <option value="">قطر</option>
+            <option value="">الكويت</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <input type="text" id="effect2" class="effect-4" placeholder=" " required />
+          <label for="effect2">رقم الهوية</label>
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">التالي</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="input-group">
+          <input type="text" id="effect3" class="effect-4" placeholder=" " />
+          <label for="effect3">إسم المستخدم</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="effect5" class="effect-4" placeholder=" " />
+          <label for="effect5">البريد الإلكتروني</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="effect6" class="effect-4" placeholder=" " />
+          <label for="effect6">كلمة السر</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="effect7" class="effect-4" placeholder=" " />
+          <label for="effect7"> تاكيد كلمة السر</label>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">السابق</a>
+          <input type="submit" value="انشاء الحساب" class="btn"
+            style="font-size: 14px; font-family: 'Cairo', sans-serif;" />
+        </div>
+      </div>
+
+    </form>
+
+    <div class="dot-right">.</div>
+    <!-- Start Images Style -->
+    <div class="assets-page">
+      <img src="{% static '/images/auth/undraw_male_avatar_323b.svg' %}" alt="">
+      <div class="dot">.</div>
+      <div class="dot-right-2">.</div>
+    </div>
+    <!-- End Images Style -->
+  </div>
+
+  <!-- Start Script -->
+  <script src="{% static '/js/auth/script.js' %}" defer></script>
+</body>
+
+</html>

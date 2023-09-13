@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+</head>
+
+<body>
+
+    <!-- HEADER START-->
+    {% include 'header.html' %}
+    <!-- HEADER END-->
+
+
+
+    <!-- BODY START -->
+    <main>
+        <article>
+            <!-- HERO START-->
+            <section class="section hero" id="home">
+                <div class="container">
+
+                    <div class="hero-content">
+                        <h2 class="h1 hero-title">الهيئة العامة للنقل<br> في جميع الوطن العربي</h2>
+
+                        <p class="hero-text" style="width: 100%; max-width: 500px;">
+                            تعمل منظومة نقل على ادارة الخدمات المتعلقة بأنشطة النقل البري والبحري
+                        </p>
+                    </div>
+
+                    <div class="hero-banner"></div>
+
+                    <form action="" class="hero-form">
+
+                        <div class="input-wrapper">
+                            <label for="input-1" class="input-label">Car, model, or brand</label>
+
+                            <input type="text" name="car-model" id="input-1" class="input-field" placeholder="What car are you looking?">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="input-2" class="input-label">Max. monthly payment</label>
+                            <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Add an amount in $">
+                        </div>
+
+
+                        <button type="submit" class="btn">إبحث</button>
+
+                    </form>
+
+                </div>
+            </section>
+            <!-- HERO END-->
+
+            <!-- GET START -->
+            <section class="section get-start" id="section">
+                <div class="container">
+
+                    <h2 class="h2 section-title">خدماتنا التي نقدمها في مجال النقل</h2>
+
+                    <ul class="get-start-list">
+
+                        <li>
+                            <div class="get-start-card">
+
+                                <div class="card-icon icon-1">
+                                    <ion-icon name="car-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="card-title">نقل بري</h3>
+
+                                <p class="card-text">
+                                    خدمة رقمية تعنى بقطاع النقل البري بالمملكة، تمكين المستثمرين والمستفيدين من تنفيذ العمليات والإجراءات المرتبطة بالقطاع دون الحاجة لمراجعة الهيئة العامة للنقل.
+                                </p>
+
+                                <a href="#" class="card-link">تصفح الخدمة</a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="get-start-card">
+
+                                <div class="card-icon icon-2">
+                                    <ion-icon name="boat-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="card-title">النقل البحري</h3>
+
+                                <p class="card-text">
+                                    خدمة رقمية تعنى بقطاع النقل البحري بالمملكة، تمكين المستثمرين والمستفيدين من تنفيذ العمليات والإجراءات المرتبطة بالقطاع دون الحاجة لمراجعة الهيئة العامة للنقل.
+                                </p>
+                                <a href="#" class="card-link">تصفح الخدمة</a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="get-start-card">
+
+                                <div class="card-icon icon-3">
+                                    <ion-icon name="airplane-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="card-title">النقل الجوي </h3>
+
+                                <p class="card-text">
+                                    خدمة رقمية تعنى بقطاع النقل البحري بالمملكة، تمكين المستثمرين والمستفيدين من تنفيذ العمليات والإجراءات المرتبطة بالقطاع دون الحاجة لمراجعة الهيئة العامة للنقل.
+                                </p>
+                                <a href="#" class="card-link">تصفح الخدمة</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="get-start-card">
+
+                                <div class="card-icon icon-4">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="card-title">توثيق الحمولة </h3>
+
+                                <p class="card-text">
+                                    خدمة رقمية تمكّن الناقلين ووسطاء الشحن من إصدار وثيقة الحمولة للبضائع المنقولة، وتتيح للناقلين من إصدار بيان الحمولة للشاحنات على الطرق البرية داخل المملكة أو إلى خارجها.
+                                </p>
+                                <a href="#" class="card-link">تصفح الخدمة</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+            <!-- GET END -->
+        </article>
+    </main>
+    <!-- BODY END -->
+
+
+    <!-- FOOTER START-->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <h2 style="color: #8a3d43; font-family: 'Cairo', sans-serif;">هيئة النقل</h2>
+
+                        <!-- <img src="./assets/images/logo.svg" alt="Ridex logo"> -->
+                    </a>
+
+                    <p class="footer-text">
+                        خدمة إلكترونية يتم من خلالها استقبال، معالجة، وإصدار طلبات الترخيص الملاحي لملاك اليخوت السياح الراغبين بالتنزه في المياه الإقليمية السعودية.
+                    </p>
+                </div>
+
+                <ul class="footer-list">
+
+
+                    <li>
+                        <a href="#" class="footer-link">خدماتنا</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#" class="footer-link">من نحن</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">تواصل معنا</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="#" class="footer-link">الدعم</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">مركز المساعدات</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">طرح الأسئلة</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">سياسة الخصوصية</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">أعضاء الفريق</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-skype"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <p class="copyright">
+                    جميع الحقوق محفوظة لدى
+                    <a href="#" style="font-weight: bold; color: #8a3d43;">هيئة النقل</a> &copy; 2023
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+
+
+    <script src="{% static '/js/script.js' %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/auth/style.css' %}" />
+    <title>تسجيل الدخول</title>
+</head>
+
+<body>
+    <div class="containars">
+        <form action="#" class="form">
+            <h1 class="text-center" style="margin-bottom: -20px; margin-top: 0; color: #6e3036;">مرحبا بعودتك يا عزيزي
+            </h1>
+            <!-- Progress bar -->
+            <div class="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active" data-title="المعلومات"></div>
+                <div class="progress-step" data-title="التحقق"></div>
+            </div>
+            <!-- Steps -->
+            <div class="form-step form-step-active">
+
+                <div class="input-group">
+                    <input type="text" id="effect2" class="effect-4" placeholder=" " required />
+                    <label for="effect2">البريد الإلكتروني</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="effect3" class="effect-4" placeholder=" " required />
+                    <label for="effect3">رقم الهوية</label>
+                </div>
+                <div class="disply-links">
+                    <p>نسيت اسم البريد</p>
+                    <p>نسيت كلمة السر</p>
+                    <p><a href="{% url 'signup' %}"> انشاء حساب جديد </a></p>
+                </div>
+
+                <a href="#" class="btn btn-next width-50 ml-auto">التالي</a>
+                <div class="">
+                </div>
+            </div>
+
+            <div class="form-step">
+
+                <div class="input-group">
+                    <input type="password" id="effect4" class="effect-4" placeholder=" " required />
+                    <label for="effect4">كلمة السر</label>
+                </div>
+                <div class="btns-group">
+                    <a href="#" class="btn btn-prev">السابق</a>
+                    <input type="submit" value="تسجيل الدخول" class="btn"
+                        style="font-size: 14px; font-family: 'Cairo', sans-serif;" />
+                </div>
+            </div>
+
+        </form>
+
+        <div class="dot-right">.</div>
+        <!-- Start Images Style 5555-5555-5555-5555 -->
+        <div class="assets-page display-none">
+            <img src="{% static '/images/auth/undraw_confirmed_re_sef7.svg' %}" alt="">
+            <div class="dot">.</div>
+            <div class="dot-right-2">.</div>
+        </div>
+        <!-- End Images Style -->
+    </div>
+
+    <!-- Start Script -->
+    <script src="{% static '/js/auth/script.js' %}" defer></script>
+</body>
+
+</html>
